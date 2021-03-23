@@ -1,0 +1,2 @@
+﻿ALTER TABLE Users
+ADD Number VARCHAR(12) NULL;

@@ -1,0 +1,36 @@
+﻿<Window x:Class="HW.PersonalThings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW"
+        mc:Ignorable="d"
+        Title=""  Height="1024" Width="1440" FontFamily="Bahnschrift Light" FontSize="16" Background="#FFDCE8F2">
+    <Grid Background="#FFDCE8F2">
+        <StackPanel>
+            <Menu>
+                <MenuItem  Header="Добавление пациента">
+                    <MenuItem x:Name="AddPatient" Header="Добавление пациента" Click="AddPatient_Click"/>
+                    <MenuItem x:Name="Personal_thigs" Header="Личные дела пациентов" Click="Personalthigs_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="Set" Header="Личный кабинет" Click="Set_Click"/>
+                <MenuItem x:Name="faq" Header="Справка" Click="Faq_Click"/>
+                <MenuItem Header="Выход" Click="MenuItem_Click"/>
+            </Menu>
+            <Border Background="White" Margin="20" VerticalAlignment="Center" Padding="40" MaxWidth="1440" MaxHeight="1000" CornerRadius="0" Height="Auto">
+                <Border.Effect>
+                    <DropShadowEffect  ShadowDepth="10" Color="#FF686161" BlurRadius="10">
+                    </DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="Личные дела пациентов" Background="#FFDCE8F2" Padding="10" Margin="0,0,10,20" VerticalAlignment="Center"/>
+                    <ScrollViewer Name="scroll" CanContentScroll="True" MaxHeight="500" MinHeight="200" Margin="0 0 10 0">
+                        <TextBlock x:Name="Patients" Text="" Margin="10,0,0,10"/>
+                    </ScrollViewer>
+                    
+                </StackPanel>
+                
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

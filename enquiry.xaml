@@ -1,0 +1,41 @@
+﻿<Window x:Class="HW.enquiry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW"
+        mc:Ignorable="d"
+        Title="" Height="auto" MaxWidth="690" MinWidth="690"  FontFamily="Bahnschrift Light" FontSize="16" Background="#FFDCE8F2">
+    <Grid>
+        <Border Background="White" Margin="0,20,20,0" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="40" MaxWidth="600" CornerRadius="0">
+            <StackPanel>
+                <TextBlock Text="Справка" Padding="10" FontSize="20"/>
+
+                <ListBox>
+                    <StackPanel Margin="5" Orientation="Vertical">
+
+                        <Label VerticalContentAlignment="Center" Padding="10" FontSize="19" Background="#FFDCE8F2">Добавление пациента</Label>
+                        <TextBlock Padding="10">
+                            Для того чтобы добавить нового пациента перейдите во вкладку <LineBreak/> "Добавление пациента" и введите все необходимые
+                            данные.<LineBreak/> После того, как все введено небходимо нажать на кнопку "Добавить"
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="5" Orientation="Vertical">
+                        <Label VerticalContentAlignment="Center" Padding="10" FontSize="19" Background="#FFDCE8F2">Настройки</Label>
+                        <TextBlock Padding="10">
+                            Для того чтобы добавить информацию о себе перейдите во вкладку <LineBreak/> "Личный кабинет" и введите все необходимые
+                            данные.<LineBreak/> Для каждого поля есть отдельный пункт сохранения данных.
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="5" Orientation="Vertical">
+                        <Label VerticalContentAlignment="Center"></Label>
+                        <Label>
+                        </Label>
+                    </StackPanel>
+                </ListBox>
+            </StackPanel>
+
+        </Border>
+    </Grid>
+
+</Window>
